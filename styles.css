@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 body {
     margin: 0;
@@ -42,21 +43,153 @@ header {
     color:red;
 }
 
-main {
+.logo_bg {
     background-image: url(img/start_bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
-}
-
-.logo_bg {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.cardapio {
+    text-align: center;
+    margin: 10px;
+}
+
+.cardapio h1{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 80px;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+    justify-content: center;
+}
+
+.grid-item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item p {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.rodape {
+    margin-top: 10px;
+    max-width: 250px;
+    padding-top: 10px;
+    border-top: 2px solid white;
+}
+
+.funcionamento {
+    margin-top: 25px;
+}
+
+.funcionamento h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 80px;
+    margin: 0;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide o container em duas colunas de larguras iguais */
+}
+
+.infos {
+    background-color: #000000;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos h2, .infos p {
+    color: #fff;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.map {
+    background-image: url(img/mapa.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contato h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 80px;
+    margin: 0;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 950px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #ce2b37;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #81181f;
+}
+
+
 footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: beige;
     height: 100px;
     display: flex;
